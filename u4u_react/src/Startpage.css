@@ -1,0 +1,57 @@
+.StartpageContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.15fr 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 150vh;
+  width: 100vw;
+}
+
+.StartHeader {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: aquamarine;
+  font-size: 23px;
+}
+.StartBody {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: blue;
+}
+.StartBottom {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.StartHeaderContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.H-Section1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.H-Section2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: green;
+}
+.H-Section3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
