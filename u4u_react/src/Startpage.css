@@ -1,0 +1,25 @@
+.StartpageContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 1fr 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: aquamarine;
+  height: 100vh;
+  width: 100vw;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+}
+.div3 {
+  grid-area: 3 / 1 / 4 / 2;
+  height: 100vh;
+  width: 100vw;
+}
