@@ -55,3 +55,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+#StartH-logo {
+  height: 150px;
+  width: 200px;
+}
