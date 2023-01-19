@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 .StartpageContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -15,7 +19,6 @@
 }
 .StartBody {
   grid-area: 2 / 1 / 3 / 2;
-  background-color: blue;
 }
 .StartBottom {
   grid-area: 3 / 1 / 4 / 2;
@@ -33,14 +36,13 @@
 
 .H-Section1 {
   grid-area: 1 / 1 / 2 / 2;
-  background-color: blueviolet;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .H-Section2 {
   grid-area: 1 / 2 / 2 / 3;
-  background-color: green;
 }
 .H-Section3 {
   grid-area: 1 / 3 / 2 / 4;
@@ -59,4 +61,68 @@ a:hover {
 #StartH-logo {
   height: 150px;
   width: 200px;
+}
+
+#StartB-1 {
+  position: absolute;
+  width: 480px;
+  height: 400px;
+  left: 0px;
+  top: 156px;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#StartB-2 {
+  position: absolute;
+  width: 480px;
+  height: 400px;
+  left: 480px;
+  top: 156px;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#StartB-3 {
+  position: absolute;
+  width: 463px;
+  height: 400px;
+  right: 0px;
+  top: 156px;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50px;
+  width: 550px;
+  align-self: center;
+  justify-self: center;
+  border-radius: 20px;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  border: solid black 1px;
+  margin: 0 auto;
+  left: 440px;
+}
+
+#uTextbox {
+  position: absolute;
+  align-items: center;
+  justify-items: center;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.CollegeSearch {
+  opacity: 0%;
+  z-index: 5;
+  width: 550px;
+  margin: 0 auto;
+  left: 440px;
 }
