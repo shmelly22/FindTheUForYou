@@ -1,19 +1,31 @@
 import React from "react";
+import logo from "../src/nudes/logo.jpeg";
 
 function StartHeader() {
   return (
     <div className="StartHeaderContainer">
-      <div class="H-Section1">
+      <div className="H-Section1">
         <label>
-          <a href="#"> Home</a>
+          <a href="http://localhost:3000/home"> Home</a>
         </label>{" "}
         <label> | </label>{" "}
         <label>
-          <a href="#"> About Us</a>
+          <a href="http://localhost:3000/aboutus"> About Us</a>
         </label>
       </div>
-      <div class="H-Section2"> </div>
-      <div class="H-Section3"> </div>
+      <div className="H-Section2">
+        <img id="StartH-logo" src={logo}></img>
+      </div>
+      <div className="H-Section3">
+        {" "}
+        <label>
+          <a href="http://localhost:3000/login"> Login</a>
+        </label>{" "}
+        <label> | </label>{" "}
+        <label>
+          <a href="http://localhost:3000/createaccount"> Create Account</a>
+        </label>{" "}
+      </div>
     </div>
   );
 }
