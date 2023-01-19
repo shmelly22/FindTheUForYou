@@ -5,11 +5,11 @@ function StartHeader() {
   return (
     <div className="StartHeaderContainer">
       <div className="H-Section1">
-        <label>
-          <a href="http://localhost:3000/home"> Home</a>
+        <label className="hover-underline-animation StartLabels">
+          <a href="http://localhost:3000/home"> Home </a>
         </label>{" "}
-        <label> | </label>{" "}
-        <label>
+        <label className="StartLabels"> | </label>{" "}
+        <label className="hover-underline-animation StartLabels">
           <a href="http://localhost:3000/aboutus"> About Us</a>
         </label>
       </div>
@@ -18,11 +18,11 @@ function StartHeader() {
       </div>
       <div className="H-Section3">
         {" "}
-        <label>
+        <label className="hover-underline-animation StartLabels">
           <a href="http://localhost:3000/login"> Login</a>
         </label>{" "}
-        <label> | </label>{" "}
-        <label>
+        <label className="StartLabels"> | </label>{" "}
+        <label className="hover-underline-animation StartLabels">
           <a href="http://localhost:3000/createaccount"> Create Account</a>
         </label>{" "}
       </div>

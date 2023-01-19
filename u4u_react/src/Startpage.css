@@ -1,7 +1,21 @@
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+/* INITIALIZE AREA ON THE GRID FOR EACH SECTION */
+.StartHeader {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #61d2ff;
+  font-size: 23px;
+}
 
+.StartBody {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.StartBottom {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+/* START PAGE HEADER CODE */
 .StartpageContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,16 +26,11 @@ body {
   width: 100vw;
 }
 
-.StartHeader {
-  grid-area: 1 / 1 / 2 / 2;
-  background-color: aquamarine;
-  font-size: 23px;
-}
-.StartBody {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.StartBottom {
-  grid-area: 3 / 1 / 4 / 2;
+.StartLabels {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
 }
 
 .StartHeaderContainer {
@@ -46,6 +55,9 @@ body {
 }
 .H-Section3 {
   grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -54,21 +66,17 @@ a {
   cursor: pointer;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 #StartH-logo {
-  height: 150px;
+  height: 100px;
   width: 200px;
 }
-
+/* CODE FOR BODY SECTION OF STARTPAGE */
 #StartB-1 {
   position: absolute;
   width: 480px;
-  height: 400px;
+  height: 466px;
   left: 0px;
-  top: 156px;
+  top: 106px;
   opacity: 0.5;
   z-index: 1;
 }
@@ -76,9 +84,9 @@ a:hover {
 #StartB-2 {
   position: absolute;
   width: 480px;
-  height: 400px;
+  height: 466px;
   left: 480px;
-  top: 156px;
+  top: 106px;
   opacity: 0.5;
   z-index: 1;
 }
@@ -86,9 +94,9 @@ a:hover {
 #StartB-3 {
   position: absolute;
   width: 463px;
-  height: 400px;
+  height: 466px;
   right: 0px;
-  top: 156px;
+  top: 106px;
   opacity: 0.5;
   z-index: 1;
 }
@@ -105,7 +113,7 @@ a:hover {
   border-radius: 20px;
   z-index: 2;
   position: absolute;
-  top: 50%;
+  top: 300px;
   border: solid black 1px;
   margin: 0 auto;
   left: 440px;
@@ -125,4 +133,59 @@ a:hover {
   width: 550px;
   margin: 0 auto;
   left: 440px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* CSS FOR THE BOTTOM SECTION */
+#S-BottomContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+}
+
+.S-Bottom-Section1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #61d2ff;
+}
+.S-Bottom-Section2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: aquamarine;
+}
+.S-Bottom-Section3 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: blanchedalmond;
+}
+.S-Bottom-Section4 {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: beige;
+}
+
+.S-bottom-text {
+  margin-top: 200px;
 }
