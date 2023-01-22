@@ -9,41 +9,33 @@ function StartBottom() {
       <div className="S-Bottom-Section1">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus
-          gravida commodo. Vivamus nec metus non orci venenatis consequat eget
-          at orci. Integer in elit posuere, consequat turpis sit amet, iaculis
-          leo. Pellentesque at laoreet metus, in elementum ante. Ut leo arcu,
-          eleifend quis nunc eget, gravida congue felis.{" "}
+          <i class="fa-regular fa-user bottom-icon"></i>
+          <br></br>
+          Holistic Approach to the College Search
         </p>
       </div>
       <div className="S-Bottom-Section2">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus
-          gravida commodo. Vivamus nec metus non orci venenatis consequat eget
-          at orci. Integer in elit posuere, consequat turpis sit amet, iaculis
-          leo. Pellentesque at laoreet metus, in elementum ante. Ut leo arcu,
-          eleifend quis nunc eget, gravida congue felis.
+          <i class="fa-regular fa-address-card bottom-icon"></i>
+          <br></br>
+          In Depth College profiles
         </p>{" "}
       </div>
       <div className="S-Bottom-Section3">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus
-          gravida commodo. Vivamus nec metus non orci venenatis consequat eget
-          at orci. Integer in elit posuere, consequat turpis sit amet, iaculis
-          leo. Pellentesque at laoreet metus, in elementum ante. Ut leo arcu,
-          eleifend quis nunc eget, gravida congue felis.{" "}
+          <i class="fa-solid fa-magnifying-glass bottom-icon"></i>
+          <br></br>
+          Quick and Easy Navigation
         </p>{" "}
       </div>
       <div className="S-Bottom-Section4">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus
-          gravida commodo. Vivamus nec metus non orci venenatis consequat eget
-          at orci. Integer in elit posuere, consequat turpis sit amet, iaculis
-          leo. Pellentesque at laoreet metus, in elementum ante. Ut leo arcu,
-          eleifend quis nunc eget, gravida congue felis.{" "}
+          <i class="fa-solid fa-list-ol bottom-icon"></i>
+          <br></br>
+          Personalized College Tier lists
         </p>{" "}
       </div>
     </div>
