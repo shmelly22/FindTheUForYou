@@ -126,6 +126,7 @@ a {
   justify-items: center;
   z-index: 2;
   margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .CollegeSearch {
@@ -189,4 +190,11 @@ a {
 
 .S-bottom-text {
   margin-top: 200px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+
+.bottom-icon {
+  font-size: 30px;
+  padding-bottom: 20px;
 }
