@@ -9,33 +9,33 @@ function StartBottom() {
       <div className="S-Bottom-Section1">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          <i class="fa-regular fa-user bottom-icon"></i>
+          <i className="fa-regular fa-user bottom-icon"></i>
           <br></br>
-          Holistic Approach to the College Search
+          Holistic Approach <br></br> to the College Search
         </p>
       </div>
       <div className="S-Bottom-Section2">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          <i class="fa-regular fa-address-card bottom-icon"></i>
+          <i className="fa-regular fa-address-card bottom-icon"></i>
           <br></br>
-          In Depth College profiles
+          In Depth <br></br>College profiles
         </p>{" "}
       </div>
       <div className="S-Bottom-Section3">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          <i class="fa-solid fa-magnifying-glass bottom-icon"></i>
+          <i className="fa-solid fa-magnifying-glass bottom-icon"></i>
           <br></br>
-          Quick and Easy Navigation
+          Intuitive<br></br> Navigation
         </p>{" "}
       </div>
       <div className="S-Bottom-Section4">
         {" "}
         <p data-aos="fade-up" className="S-bottom-text">
-          <i class="fa-solid fa-list-ol bottom-icon"></i>
+          <i className="fa-solid fa-list-ol bottom-icon"></i>
           <br></br>
-          Personalized College Tier lists
+          Personalized <br></br>College Tier lists
         </p>{" "}
       </div>
     </div>

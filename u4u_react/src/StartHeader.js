@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../src/nudes/logo.jpeg";
+import logo from "../src/nudes/logo.png";
 
 function StartHeader() {
   return (
