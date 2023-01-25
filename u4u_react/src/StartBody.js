@@ -17,7 +17,6 @@ function StartBody() {
       <img id="StartB-1" src={college1}></img>
       <div id="StartB-Search">
         <div id="searchBox">
-          <i className="fa-regular fa-circle-right"></i>
           <input
             type={"text"}
             name={"username"}
@@ -28,6 +27,7 @@ function StartBody() {
             className="CollegeSearch"
             maxLength={50}
           ></input>
+          <i className="fa-regular fa-circle-right"></i>
         </div>
       </div>
       <img id="StartB-2" src={college2}></img>

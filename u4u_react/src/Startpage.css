@@ -202,5 +202,6 @@ input:focus {
 
 .fa-circle-right {
   text-align: right;
-  color: #ea8715;
+  font-size: 30px;
+  margin-right: 5px;
 }
