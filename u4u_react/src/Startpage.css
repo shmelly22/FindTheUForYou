@@ -4,7 +4,7 @@ body {
 /* INITIALIZE AREA ON THE GRID FOR EACH SECTION */
 .StartHeader {
   grid-area: 1 / 1 / 2 / 2;
-  background-color: #61d2ff;
+  background-color: #1e4c8f;
   font-size: 23px;
   height: 8.4vh;
 }
@@ -140,7 +140,7 @@ a {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: #1e4c8f;
 }
 
 .hover-underline-animation:after {
@@ -151,7 +151,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #1e4c8f;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
