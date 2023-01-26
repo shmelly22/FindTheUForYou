@@ -6,6 +6,7 @@ body {
   grid-area: 1 / 1 / 2 / 2;
   background-color: #61d2ff;
   font-size: 23px;
+  height: 8.4vh;
 }
 
 .StartBody {
@@ -73,30 +74,30 @@ a {
 /* CODE FOR BODY SECTION OF STARTPAGE */
 #StartB-1 {
   position: absolute;
-  width: 480px;
+  width: 33.33333vw;
   height: 466px;
   left: 0px;
-  top: 106px;
+  top: 8.4vh;
   opacity: 0.5;
   z-index: 1;
 }
 
 #StartB-2 {
   position: absolute;
-  width: 480px;
+  width: 33.33333vw;
   height: 466px;
-  left: 480px;
-  top: 106px;
+  left: 33.333333vw;
+  top: 8.4vh;
   opacity: 0.5;
   z-index: 1;
 }
 
 #StartB-3 {
   position: absolute;
-  width: 463px;
+  width: 33.33333vw;
   height: 466px;
   right: 0px;
-  top: 106px;
+  top: 8.4vh;
   opacity: 0.5;
   z-index: 1;
 }
@@ -107,7 +108,7 @@ a {
   justify-content: center;
   background-color: white;
   height: 50px;
-  width: 550px;
+  width: 24vw;
   align-self: center;
   justify-self: center;
   border-radius: 20px;
@@ -116,7 +117,7 @@ a {
   top: 300px;
   border: solid black 1px;
   margin: 0 auto;
-  left: 440px;
+  left: 38vw;
 }
 
 #uTextbox {
