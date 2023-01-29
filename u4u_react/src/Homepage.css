@@ -1,0 +1,16 @@
+.tierlist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 120px);
+}
+
+.tier {
+  background-color: aqua;
+  border: solid black;
+  font-size: 70px;
+}
+
+.collegeSpace {
+  background-color: bisque;
+  border: solid black;
+}

@@ -12,6 +12,10 @@ function StartBody() {
     console.log(text);
   };
 
+  function handleSearchButtonClicked() {
+    console.log("oihsdfohsdf");
+  }
+
   return (
     <div id="StartBody-Container">
       <img id="StartB-1" src={college1}></img>
@@ -29,7 +33,7 @@ function StartBody() {
           ></input>
           <i
             className="fa-regular fa-circle-right"
-            onClick={console.log("khusdf")}
+            onClick={handleSearchButtonClicked}
           ></i>
         </div>
       </div>
