@@ -9,7 +9,7 @@ function StartHeader() {
     <div className="StartHeaderContainer">
       <div className="H-Section1">
         <label className="hover-underline-animation StartLabels">
-          <a href="http://localhost:3000/home"> Home </a>
+          <a href="http://localhost:3000/home"> My List </a>
         </label>{" "}
         <label className="StartLabels"> | </label>{" "}
         <label className="hover-underline-animation StartLabels">

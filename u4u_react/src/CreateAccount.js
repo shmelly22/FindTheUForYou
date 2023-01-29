@@ -90,53 +90,55 @@ function CreateAccount() {
       <h1 className="header">Create Account</h1>
       <div id="createAccountContainer">
         <div id="createAccountBox">
-          <div id="usernameBox" value="hello">
-            <input
-              type={"text"}
-              name={"username"}
-              value={username}
-              onChange={(event) => handleUsernameChange(event)}
-              required
-              placeholder="Username"
-              className="loginInputs"
-              maxLength={18}
-            ></input>
-          </div>
-          <div id="passwordBox">
-            <input
-              type={"text"}
-              name={"password"}
-              value={password}
-              onChange={(event) => handlePassowrdChange(event)}
-              required
-              placeholder="Password"
-              className="loginInputs"
-              maxLength={12}
-            ></input>
-            <div id="emailBox" value="hello">
+          <form>
+            <div id="usernameBox" value="hello">
               <input
-                type={"email"}
-                name={"email"}
-                value={email}
-                onChange={(event) => handleEmailChange(event)}
+                type={"text"}
+                name={"username"}
+                value={username}
+                onChange={(event) => handleUsernameChange(event)}
                 required
-                placeholder="Email"
+                placeholder="Username"
                 className="loginInputs"
-                maxLength={25}
+                maxLength={18}
               ></input>
             </div>
-          </div>
+            <div id="passwordBox">
+              <input
+                type={"text"}
+                name={"password"}
+                value={password}
+                onChange={(event) => handlePassowrdChange(event)}
+                required
+                placeholder="Password"
+                className="loginInputs"
+                maxLength={12}
+              ></input>
+              <div id="emailBox" value="hello">
+                <input
+                  type={"email"}
+                  name={"email"}
+                  value={email}
+                  onChange={(event) => handleEmailChange(event)}
+                  required
+                  placeholder="Email"
+                  className="loginInputs"
+                  maxLength={25}
+                ></input>
+              </div>
+            </div>
 
-          <div id="submitButton">
-            <p className="submitLabel">Create Account</p>
-            <button
-              type="submit"
-              className="loginSubmit"
-              onClick={(event) => handleSubmit(event)}
-            >
-              Create Account
-            </button>
-          </div>
+            <div id="submitButton">
+              <p className="submitLabel">Create Account</p>
+              <button
+                type="submit"
+                className="loginSubmit"
+                onClick={(event) => handleSubmit(event)}
+              >
+                Create Account
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
