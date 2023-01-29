@@ -1,5 +1,8 @@
 import React from "react";
+
 import logo from "../src/nudes/logo.png";
+import "./Startpage.css";
+
 
 function StartHeader() {
   return (

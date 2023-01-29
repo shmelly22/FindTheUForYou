@@ -147,7 +147,7 @@ input:focus {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: #1e4c8f;
 }
 
 .hover-underline-animation:after {
@@ -158,7 +158,7 @@ input:focus {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #1e4c8f;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
