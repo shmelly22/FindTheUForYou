@@ -27,7 +27,10 @@ function StartBody() {
             className="CollegeSearch"
             maxLength={50}
           ></input>
-          <i className="fa-regular fa-circle-right"></i>
+          <i
+            className="fa-regular fa-circle-right"
+            onClick={console.log("khusdf")}
+          ></i>
         </div>
       </div>
       <img id="StartB-2" src={college2}></img>
