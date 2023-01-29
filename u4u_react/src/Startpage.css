@@ -4,13 +4,14 @@ body {
 /* INITIALIZE AREA ON THE GRID FOR EACH SECTION */
 .StartHeader {
   grid-area: 1 / 1 / 2 / 2;
-  background-color: #61d2ff;
+  background-color: #ea8715;
   font-size: 23px;
-  height: 8.4vh;
+  height: 110px;
 }
 
 .StartBody {
   grid-area: 2 / 1 / 3 / 2;
+  height: 466px;
 }
 .StartBottom {
   grid-area: 3 / 1 / 4 / 2;
@@ -23,7 +24,7 @@ body {
   grid-template-rows: 0.15fr 1fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 150vh;
+  height: 130vh;
   width: 100vw;
 }
 
@@ -77,8 +78,8 @@ a {
   width: 33.33333vw;
   height: 466px;
   left: 0px;
-  top: 8.4vh;
-  opacity: 0.5;
+  top: 110px;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -87,8 +88,8 @@ a {
   width: 33.33333vw;
   height: 466px;
   left: 33.333333vw;
-  top: 8.4vh;
-  opacity: 0.5;
+  top: 110px;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -97,8 +98,8 @@ a {
   width: 33.33333vw;
   height: 466px;
   right: 0px;
-  top: 8.4vh;
-  opacity: 0.5;
+  top: 110px;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -108,7 +109,7 @@ a {
   justify-content: center;
   background-color: white;
   height: 50px;
-  width: 24vw;
+  width: 40vw;
   align-self: center;
   justify-self: center;
   border-radius: 20px;
@@ -117,7 +118,9 @@ a {
   top: 300px;
   border: solid black 1px;
   margin: 0 auto;
-  left: 38vw;
+  left: 30vw;
+  -webkit-box-shadow: 17px 12px 42px 5px rgba(0, 0, 0, 0.83);
+  box-shadow: 17px 12px 42px 5px rgba(0, 0, 0, 0.83);
 }
 
 #uTextbox {
@@ -126,21 +129,25 @@ a {
   justify-items: center;
   z-index: 2;
   margin: 0 auto;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .CollegeSearch {
-  opacity: 0%;
   z-index: 5;
   width: 550px;
   margin: 0 auto;
   left: 440px;
+  border: none;
+  text-align: center;
+}
+
+input:focus {
+  outline-width: 0;
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: #1e4c8f;
 }
 
 .hover-underline-animation:after {
@@ -151,7 +158,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #1e4c8f;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -173,28 +180,28 @@ a {
 
 .S-Bottom-Section1 {
   grid-area: 1 / 1 / 2 / 2;
-  background-color: #61d2ff;
+  background-color: #169ce9;
 }
 .S-Bottom-Section2 {
   grid-area: 1 / 2 / 2 / 3;
-  background-color: aquamarine;
+  background-color: #169ce9;
 }
 .S-Bottom-Section3 {
   grid-area: 1 / 3 / 2 / 4;
-  background-color: blanchedalmond;
+  background-color: #169ce9;
 }
 .S-Bottom-Section4 {
   grid-area: 1 / 4 / 2 / 5;
-  background-color: beige;
+  background-color: #169ce9;
 }
 
 .S-bottom-text {
   margin-top: 200px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 35px;
 }
 
-.bottom-icon {
+.fa-circle-right {
+  text-align: right;
   font-size: 30px;
-  padding-bottom: 20px;
+  margin-right: 5px;
 }

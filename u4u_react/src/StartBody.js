@@ -7,22 +7,16 @@ function StartBody() {
   const [college, setCollege] = useState("");
 
   const handleSearchChange = (event) => {
-    let p = document.getElementById("uTextbox");
     let text = event.target.value;
     setCollege(event.target.value);
-    p.textContent = text;
     console.log(text);
-    if (text.length < 1) {
-      p.textContent = "Search Colleges Here...";
-    }
   };
 
   return (
     <div id="StartBody-Container">
       <img id="StartB-1" src={college1}></img>
       <div id="StartB-Search">
-        <div id="searchBox" value="hello">
-          <p id="uTextbox">Search Colleges Here...</p>
+        <div id="searchBox">
           <input
             type={"text"}
             name={"username"}
@@ -33,6 +27,10 @@ function StartBody() {
             className="CollegeSearch"
             maxLength={50}
           ></input>
+          <i
+            className="fa-regular fa-circle-right"
+            onClick={console.log("khusdf")}
+          ></i>
         </div>
       </div>
       <img id="StartB-2" src={college2}></img>

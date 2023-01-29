@@ -1,0 +1,257 @@
+.Rectangle2 {
+  position: absolute;
+  width: 658px;
+  height: 563px;
+  left: 391px;
+  top: 230px;
+
+  background: #242424;
+  border-radius: 25px;
+}
+
+.CreateAccount {
+  position: absolute;
+  width: 384px;
+  height: 54px;
+  left: 528px;
+  top: 254px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Create Account */
+
+  position: absolute;
+  width: 277px;
+  height: 53px;
+  left: 581px;
+  top: 570px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.Rectangle3 {
+  position: absolute;
+  width: 456px;
+  height: 51px;
+  left: 492px;
+  top: 362.5px;
+
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+}
+
+.Rectangle4 {
+  position: absolute;
+  width: 456px;
+  height: 51px;
+  left: 492px;
+  top: 457px;
+
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+}
+
+.Email {
+  position: absolute;
+  width: 138px;
+  height: 39px;
+  left: 502px;
+  top: 369px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+
+  color: #ffffff;
+}
+
+.Password {
+  position: absolute;
+  width: 263px;
+  height: 41px;
+  left: 502px;
+  top: 462px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+}
+/* identical to box height */
+
+/* I have read and agree to the Terms of Service TOS*/
+
+.TOS {
+  position: absolute;
+  width: 733px;
+  height: 59px;
+  left: 369px;
+  top: 705px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.Rectangle6 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 407px;
+  top: 711px;
+
+  border: 2px solid #ffffff;
+  border-radius: 1px;
+}
+
+.Rectangle5 {
+  position: absolute;
+  width: 284px;
+  height: 43px;
+  left: 578px;
+  top: 569px;
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.Rectangle10 {
+  position: absolute;
+  width: 658px;
+  height: 563px;
+  left: 391px;
+  top: 230px;
+
+  background: #242424;
+  border-radius: 25px;
+}
+
+.CreateAccount {
+  position: absolute;
+  width: 384px;
+  height: 54px;
+  left: 528px;
+  top: 254px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Create Account */
+
+  position: absolute;
+  width: 277px;
+  height: 53px;
+  left: 581px;
+  top: 570px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.Rectangle11 {
+  position: absolute;
+  width: 456px;
+  height: 51px;
+  left: 492px;
+  top: 362.5px;
+
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+}
+
+.Rectangle12 {
+  position: absolute;
+  width: 456px;
+  height: 51px;
+  left: 492px;
+  top: 457px;
+
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+}
+
+.Email {
+  position: absolute;
+  width: 138px;
+  height: 39px;
+  left: 502px;
+  top: 369px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+
+  color: #ffffff;
+}
+
+.Password {
+  position: absolute;
+  width: 263px;
+  height: 41px;
+  left: 502px;
+  top: 462px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+}
+
+.Rectangle13 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 407px;
+  top: 711px;
+
+  border: 2px solid #ffffff;
+  border-radius: 1px;
+}
+
+.Rectangle14 {
+  position: absolute;
+  width: 284px;
+  height: 43px;
+  left: 578px;
+  top: 569px;
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
