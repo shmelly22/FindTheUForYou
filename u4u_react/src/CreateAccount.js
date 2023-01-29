@@ -1,6 +1,9 @@
+
+import "./CreateAccount.css";
 import React, { useState } from "react";
 import StartHeader from "./StartHeader";
 import "./Startpage.css";
+
 
 function CreateAccount() {
   var allUsernames = [];
