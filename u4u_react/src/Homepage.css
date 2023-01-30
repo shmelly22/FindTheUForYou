@@ -1,16 +1,43 @@
 .tierlist {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 185px 1fr;
   grid-template-rows: repeat(5, 120px);
 }
 
 .tier {
+  display: flex;
   background-color: aqua;
   border: solid black;
-  font-size: 70px;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .collegeSpace {
-  background-color: bisque;
+  background-color: #191919;
   border: solid black;
+}
+
+.S {
+  background-color: rgb(255, 127, 127);
+}
+
+.A {
+  background-color: rgb(255, 191, 127);
+}
+
+.B {
+  background-color: rgb(255, 223, 127);
+}
+
+.C {
+  background-color: rgb(255, 255, 127);
+}
+
+.D {
+  background-color: rgb(191, 255, 127);
+}
+
+.hikaru {
+  width: 180px;
 }
