@@ -1,5 +1,6 @@
 /* fallback for old browsers */
 .background {
+
   background: #6a11cb;
 
   /* Chrome 10-25, Safari 5.1-6 */
@@ -16,6 +17,7 @@
     rgba(37, 117, 252, 1)
   );
 }
+
 .rectangle {
   position: absolute;
   width: 658px;
