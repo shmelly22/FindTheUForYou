@@ -1,0 +1,81 @@
+/* fallback for old browsers */
+.background {
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+}
+
+.rectangle {
+  position: absolute;
+  width: 658px;
+  height: 563px;
+  left: 430px;
+  top: 150px;
+
+  background: #242424;
+  border-radius: 25px;
+}
+
+.header {
+  position: absolute;
+  width: 384px;
+  height: 54px;
+  left: 528px;
+  top: 180px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* Create Account */
+.loginInputs {
+  position: absolute;
+  width: 456px;
+  height: 51px;
+  left: 492px;
+  top: 320px;
+
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+}
+
+.loginInputsp {
+  position: absolute;
+  width: 456px;
+  height: 51px;
+  left: 492px;
+  top: 420px;
+
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+}
+
+/* Create Account */
+.loginSubmit {
+  position: absolute;
+  width: 284px;
+  height: 43px;
+  left: 578px;
+  top: 530px;
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}

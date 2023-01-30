@@ -1,9 +1,7 @@
-
-import "./CreateAccount.css";
+import "./Createaccount.css";
 import React, { useState } from "react";
 import StartHeader from "./StartHeader";
 import "./Startpage.css";
-
 
 function CreateAccount() {
   var allUsernames = [];
@@ -80,65 +78,72 @@ function CreateAccount() {
   };
 
   return (
-    <div id="cc-container">
+    <div className="cc-container">
       <StartHeader />
       <link
         href="https://fonts.googleapis.com/css?family=Yellowtail:400"
         rel="stylesheet"
         type="text/css"
       ></link>
-      <h1 className="header">Create Account</h1>
-      <div id="createAccountContainer">
-        <div id="createAccountBox">
-          <div id="usernameBox" value="hello">
-            <input
-              type={"text"}
-              name={"username"}
-              value={username}
-              onChange={(event) => handleUsernameChange(event)}
-              required
-              placeholder="Username"
-              className="loginInputs"
-              maxLength={18}
-            ></input>
-          </div>
-          <div id="passwordBox">
-            <input
-              type={"text"}
-              name={"password"}
-              value={password}
-              onChange={(event) => handlePassowrdChange(event)}
-              required
-              placeholder="Password"
-              className="loginInputs"
-              maxLength={12}
-            ></input>
-            <div id="emailBox" value="hello">
+      <section class="vh-100 gradient-custom">
+        <div className="background"></div>
+        <div className="rectangle"></div>
+        <h1 className="header">Create Account</h1>
+        <div id="createAccountContainer">
+          <div id="createAccountBox">
+            <div id="usernameBox" value="hello">
               <input
-                type={"email"}
-                name={"email"}
-                value={email}
-                onChange={(event) => handleEmailChange(event)}
+                type={"text"}
+                name={"username"}
+                value={username}
+                onChange={(event) => handleUsernameChange(event)}
                 required
-                placeholder="Email"
+                placeholder="Username"
                 className="loginInputs"
-                maxLength={25}
+                maxLength={18}
               ></input>
             </div>
-          </div>
+            <div id="passwordBox">
+              <input
+                type={"text"}
+                name={"password"}
+                value={password}
+                onChange={(event) => handlePassowrdChange(event)}
+                required
+                placeholder="Password"
+                className="loginInputsp"
+                maxLength={12}
+              ></input>
+              <div id="emailBox" value="hello">
+                <input
+                  type={"email"}
+                  name={"email"}
+                  value={email}
+                  onChange={(event) => handleEmailChange(event)}
+                  required
+                  placeholder="Email"
+                  className="loginInputs"
+                  maxLength={25}
+                ></input>
+              </div>
+            </div>
 
-          <div id="submitButton">
-            <p className="submitLabel">Create Account</p>
-            <button
-              type="submit"
-              className="loginSubmit"
-              onClick={(event) => handleSubmit(event)}
-            >
-              Create Account
-            </button>
+            <div id="submitButton">
+              <button
+                type="submit"
+                className="loginSubmit"
+                onClick={(event) => handleSubmit(event)}
+              >
+                Create Account
+              </button>
+            </div>
+            <input type="checkbox" className="checkBox"></input>
+            <div className="TOS">
+              I have read and agree to the Terms of Service
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
