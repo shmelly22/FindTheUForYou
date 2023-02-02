@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 app.use(cors());
 var bodyParser = require("body-parser");
+const fs = require("fs");
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -70,6 +71,29 @@ app.post("/login", (req, res) => {
       ["username", "password", "email"]
     )
     .then((accounts) => console.log("Username Added to DB"));
+});
+
+app.get("/college", (req, res) => {
+  fs.readFile("./us_institutions.json", (err, json) => {
+    let obj = JSON.parse(json);
+    res.json(obj);
+  });
+});
+
+app.post("/college", (req, res) => {
+  console.log("I am posting in the colleges page");
+  let userLogged = req.body.user;
+  let collegeSearched = req.body.collegeSearched;
+
+  db("collegelist")
+    .insert(
+      {
+        user: userLogged,
+        college: collegeSearched,
+      },
+      ["user", "college"]
+    )
+    .then((accounts) => console.log("user and college added to db"));
 });
 
 app.listen(5000, () => {
