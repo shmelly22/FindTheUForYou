@@ -1,4 +1,4 @@
-import "./Createaccount.css";
+import "./CreateAccount.css";
 import React, { useState } from "react";
 import StartHeader from "./StartHeader";
 import "./Startpage.css";
@@ -85,7 +85,7 @@ function CreateAccount() {
         rel="stylesheet"
         type="text/css"
       ></link>
-      <section class="vh-100 gradient-custom">
+      <section className="vh-100 gradient-custom">
         <div className="background"></div>
         <div className="rectangle"></div>
         <h1 className="header">Create Account</h1>
