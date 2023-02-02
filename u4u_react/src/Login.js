@@ -3,7 +3,6 @@ import "./Login.css";
 import StartHeader from "./StartHeader";
 import "./Startpage.css";
 
-
 function Login() {
   var allUsernames = [];
   var allPasswords = [];
@@ -64,17 +63,19 @@ function Login() {
   };
 
   return (
-    <div id="cc-container">
+    <div className="cc-container">
       <StartHeader />
       <link
         href="https://fonts.googleapis.com/css?family=Yellowtail:400"
         rel="stylesheet"
         type="text/css"
       ></link>
-      <h1 className="header">Login</h1>
-      <div id="createAccountContainer">
-        <div id="createAccountBox">
-          <form>
+      <section class="vh-100 gradient-custom">
+        <div className="background"></div>
+        <div className="rectangle"></div>
+        <h1 className="header">Login</h1>
+        <div id="createAccountContainer">
+          <div id="createAccountBox">
             <div id="usernameBox" value="hello">
               <input
                 type={"text"}
@@ -95,7 +96,7 @@ function Login() {
                 onChange={(event) => handlePassowrdChange(event)}
                 required
                 placeholder="Password"
-                className="loginInputs"
+                className="loginInputsp"
                 maxLength={12}
               ></input>
             </div>
@@ -109,9 +110,9 @@ function Login() {
                 Login
               </button>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

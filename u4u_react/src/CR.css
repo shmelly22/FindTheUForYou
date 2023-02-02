@@ -1,0 +1,25 @@
+.CR-body-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.CR-body-top {
+  background-color: blue;
+  height: 30%;
+  width: 100%;
+}
+
+.CR-body-main {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+
+#CR-heart {
+  font-size: 35px;
+}
+
+#CR-heart:hover {
+  cursor: pointer;
+  background-color: red;
+}

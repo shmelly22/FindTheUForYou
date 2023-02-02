@@ -91,7 +91,7 @@ function CreateAccount() {
         <h1 className="header">Create Account</h1>
         <div id="createAccountContainer">
           <div id="createAccountBox">
-          <form>            <div id="usernameBox" value="hello">
+            <div id="usernameBox" value="hello">
               <input
                 type={"text"}
                 name={"username"}
@@ -142,7 +142,6 @@ function CreateAccount() {
               I have read and agree to the Terms of Service
             </div>
           </div>
-          </form>
         </div>
       </section>
     </div>
