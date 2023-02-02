@@ -197,11 +197,15 @@ input:focus {
 
 .S-bottom-text {
   margin-top: 200px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .fa-circle-right {
   text-align: right;
   font-size: 30px;
   margin-right: 5px;
+}
+
+.fa-circle-right:hover {
+  cursor: pointer;
 }

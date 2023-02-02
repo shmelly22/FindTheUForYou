@@ -1,4 +1,3 @@
-/* fallback for old browsers */
 .background {
   background: #6a11cb;
 
@@ -16,6 +15,7 @@
     rgba(37, 117, 252, 1)
   );
 }
+
 .rectangle {
   position: absolute;
   width: 658px;
