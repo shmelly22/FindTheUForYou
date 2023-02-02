@@ -21,25 +21,30 @@
 }
 
 /* Create Account */
-.loginInputs {
+.E {
   position: absolute;
   width: 30vw;
   border-radius: 50%;
-  margin: 0 auto;
-
-  border: 2px solid #c9d0db;
-  border-radius: 5px;
 }
 
-.loginInputsp {
+.P {
   position: absolute;
   width: 456px;
   height: 51px;
-  margin: auto;
-  top: 420px;
+  top: 520px;
+}
 
+.U {
+  position: absolute;
+  width: 456px;
+  height: 51px;
+  top: 620px;
+}
+
+.loginInputs {
   border: 2px solid #c9d0db;
   border-radius: 5px;
+  margin: auto;
 }
 
 /* Create Account */

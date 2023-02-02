@@ -99,7 +99,7 @@ function CreateAccount() {
                 onChange={(event) => handleUsernameChange(event)}
                 required
                 placeholder="Username"
-                className="loginInputs"
+                className="loginInputs U"
                 maxLength={18}
               ></input>
             </div>
@@ -111,7 +111,7 @@ function CreateAccount() {
                 onChange={(event) => handlePassowrdChange(event)}
                 required
                 placeholder="Password"
-                className="loginInputsp"
+                className="loginInputs P"
                 maxLength={12}
               ></input>
               <div id="emailBox" value="hello">
@@ -122,7 +122,7 @@ function CreateAccount() {
                   onChange={(event) => handleEmailChange(event)}
                   required
                   placeholder="Email"
-                  className="loginInputs"
+                  className="loginInputs E"
                   maxLength={25}
                 ></input>
               </div>
