@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 app.use(cors());
 var bodyParser = require("body-parser");
+const fs = require("fs");
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -73,19 +74,26 @@ app.post("/login", (req, res) => {
 });
 
 app.get("/college", (req, res) => {
-  (async () => {
-    const response = await fetch(
-      "https://parseapi.back4app.com/classes/University/state",
+  fs.readFile("./us_institutions.json", (err, json) => {
+    let obj = JSON.parse(json);
+    res.json(obj);
+  });
+});
+
+app.post("/college", (req, res) => {
+  console.log("I am posting in the colleges page");
+  let userLogged = req.body.user;
+  let collegeSearched = req.body.collegeSearched;
+
+  db("collegelist")
+    .insert(
       {
-        headers: {
-          "X-Parse-Application-Id": "Ipq7xXxHYGxtAtrDgCvG0hrzriHKdOsnnapEgcbe", // This is the fake app's application id
-          "X-Parse-Master-Key": "HNodr26mkits5ibQx2rIi0GR9pVCwOSEAkqJjgVp", // This is the fake app's readonly master key
-        },
-      }
-    );
-    const data = await response.json(); // Here you have the data that you need
-    console.log(JSON.stringify(data, null, 2));
-  })();
+        user: userLogged,
+        college: collegeSearched,
+      },
+      ["user", "college"]
+    )
+    .then((accounts) => console.log("user and college added to db"));
 });
 
 app.listen(5000, () => {

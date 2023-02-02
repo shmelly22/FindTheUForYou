@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import college1 from "../src/nudes/College1.jpg";
 import college2 from "../src/nudes/College2.jpg";
 import college3 from "../src/nudes/College3.jpg";
@@ -7,14 +7,42 @@ function StartBody() {
   const [college, setCollege] = useState("");
 
   const handleSearchChange = (event) => {
-    let text = event.target.value;
     setCollege(event.target.value);
-    console.log(text);
+    const filteredColleges = collegeListArr.filter(
+      (collegeName) => collegeName == college
+    );
+    console.log(filteredColleges);
   };
 
   function handleSearchButtonClicked() {
-    console.log("oihsdfohsdf");
+    window.location.href = "http://localhost:3000/collegeReport";
+    sessionStorage.setItem("collegeSearched", college);
   }
+  var collegeListArr;
+
+  const showList = () => {
+    console.log(collegeListArr);
+  };
+
+  useEffect(() => {
+    fetch("http://localhost:5000/college", {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        // The response is a Response instance.
+        // You parse the data into a useable format using `.json()`
+        return response.json();
+      })
+      .then((data) => {
+        collegeListArr = data;
+      })
+      .then(() => {
+        showList();
+      });
+  }, []);
 
   return (
     <div id="StartBody-Container">
