@@ -1,83 +1,117 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
+import StartHeader from "./StartHeader";
+import "./Startpage.css";
+
 
 function Login() {
+  var allUsernames = [];
+  var allPasswords = [];
+  var allEmails = [];
+
+  fetch("http://localhost:5000/login", {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then(function (response) {
+      // The response is a Response instance.
+      // You parse the data into a useable format using `.json()`
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      for (let index = 0; index < data.usernames.length; index++) {
+        if (allUsernames.indexOf(data.usernames[index]) === -1) {
+          allUsernames.push(data.usernames[index].toUpperCase());
+          allPasswords.push(data.password[index].toUpperCase());
+          allEmails.push(data.email[index].toUpperCase());
+        }
+      }
+    });
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
+  const handlePassowrdChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    let usernameInput = username.toUpperCase();
+    let passwordInput = password.toUpperCase();
+    if (usernameInput.length < 1 || passwordInput.length < 1) {
+      alert("Please enter a Username and Password");
+    } else {
+      if (allUsernames.indexOf(usernameInput) === -1) {
+        alert("Username not found, please try again");
+      } else {
+        let usernameIndex = allUsernames.indexOf(usernameInput);
+        if (allPasswords.indexOf(passwordInput) === usernameIndex) {
+          alert("Username and password match welcome in" + " " + username);
+          window.location.href = "http://localhost:3000/";
+          sessionStorage.setItem("User", username);
+        } else {
+          alert("Username is correct, however the password is incorrect");
+        }
+      }
+    }
+    event.preventDefault();
+  };
+
   return (
-    <div>
-      <section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
-                  <div class="mb-md-5 mt-md-4 pb-5">
-                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                    <p class="text-white-50 mb-5">
-                      Please enter your login and password
-                    </p>
-
-                    <div class="form-outline form-white mb-4">
-                      <input
-                        type="email"
-                        id="typeEmailX"
-                        class="form-control form-control-lg"
-                      />
-                      <label class="form-label" for="typeEmailX">
-                        Email
-                      </label>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                      <input
-                        type="password"
-                        id="typePasswordX"
-                        class="form-control form-control-lg"
-                      />
-                      <label class="form-label" for="typePasswordX">
-                        Password
-                      </label>
-                    </div>
-
-                    <p class="small mb-5 pb-lg-2">
-                      <a class="text-white-50" href="#!">
-                        Forgot password?
-                      </a>
-                    </p>
-
-                    <button
-                      class="btn btn-outline-light btn-lg px-5"
-                      type="submit"
-                    >
-                      Login
-                    </button>
-
-                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                      <a href="#!" class="text-white">
-                        <i class="fab fa-facebook-f fa-lg"></i>
-                      </a>
-                      <a href="#!" class="text-white">
-                        <i class="fab fa-twitter fa-lg mx-4 px-2"></i>
-                      </a>
-                      <a href="#!" class="text-white">
-                        <i class="fab fa-google fa-lg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p class="mb-0">
-                      Don't have an account?{" "}
-                      <a href="#!" class="text-white-50 fw-bold">
-                        Sign Up
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
+    <div id="cc-container">
+      <StartHeader />
+      <link
+        href="https://fonts.googleapis.com/css?family=Yellowtail:400"
+        rel="stylesheet"
+        type="text/css"
+      ></link>
+      <h1 className="header">Login</h1>
+      <div id="createAccountContainer">
+        <div id="createAccountBox">
+          <form>
+            <div id="usernameBox" value="hello">
+              <input
+                type={"text"}
+                name={"username"}
+                value={username}
+                onChange={(event) => handleUsernameChange(event)}
+                required
+                placeholder="Username"
+                className="loginInputs"
+                maxLength={18}
+              ></input>
             </div>
-          </div>
+            <div id="passwordBox">
+              <input
+                type={"text"}
+                name={"password"}
+                value={password}
+                onChange={(event) => handlePassowrdChange(event)}
+                required
+                placeholder="Password"
+                className="loginInputs"
+                maxLength={12}
+              ></input>
+            </div>
+
+            <div id="submitButton">
+              <button
+                type="submit"
+                className="loginSubmit"
+                onClick={(event) => handleSubmit(event)}
+              >
+                Login
+              </button>
+            </div>
+          </form>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
