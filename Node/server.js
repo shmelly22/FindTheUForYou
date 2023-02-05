@@ -73,13 +73,6 @@ app.post("/login", (req, res) => {
     .then((accounts) => console.log("Username Added to DB"));
 });
 
-app.get("/college", (req, res) => {
-  fs.readFile("./us_institutions.json", (err, json) => {
-    let obj = JSON.parse(json);
-    res.json(obj);
-  });
-});
-
 app.post("/college", (req, res) => {
   console.log("I am posting in the colleges page");
   let userLogged = req.body.user;

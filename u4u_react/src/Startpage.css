@@ -147,7 +147,7 @@ input:focus {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #1e4c8f;
+  color: black;
 }
 
 .hover-underline-animation:after {
@@ -175,7 +175,7 @@ input:focus {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 100%;
+  height: 120%;
 }
 
 .S-Bottom-Section1 {
@@ -208,4 +208,24 @@ input:focus {
 
 .fa-circle-right:hover {
   cursor: pointer;
+}
+
+#college-autofill {
+  height: 250px;
+  width: 40vw;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  left: 30vw;
+  margin-top: 245px;
+  border-radius: 20px;
+  box-shadow: -15px 13px 22px -2px rgba(0, 0, 0, 0.75);
+}
+
+#college-autofill-list {
+  list-style-type: none;
+  padding: 0;
+
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 22px;
 }
