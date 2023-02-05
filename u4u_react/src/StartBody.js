@@ -2,47 +2,38 @@ import React, { useState, useEffect } from "react";
 import college1 from "../src/nudes/College1.jpg";
 import college2 from "../src/nudes/College2.jpg";
 import college3 from "../src/nudes/College3.jpg";
+import collegenames from "./us_institutions.json";
 
 function StartBody() {
-  const [college, setCollege] = useState("");
+  const collegedata = collegenames;
 
-  const handleSearchChange = (event) => {
-    setCollege(event.target.value);
-    const filteredColleges = collegeListArr.filter(
-      (collegeName) => collegeName == college
-    );
-    console.log(filteredColleges);
-  };
+  const [college, setCollege] = useState("");
+  const [filteredArray, setFilteredArray] = useState([]);
 
   function handleSearchButtonClicked() {
     window.location.href = "http://localhost:3000/collegeReport";
     sessionStorage.setItem("collegeSearched", college);
   }
-  var collegeListArr;
 
-  const showList = () => {
-    console.log(collegeListArr);
+  const handleSearchChange = (event) => {
+    setCollege(event.target.value);
+    setFilteredArray(
+      collegedata.filter((college) =>
+        college.institution
+          .toLowerCase()
+          .includes(event.target.value.toLowerCase())
+      )
+    );
+
+    if (event.target.value == "") {
+      setFilteredArray([]);
+    }
   };
 
-  useEffect(() => {
-    fetch("http://localhost:5000/college", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        // The response is a Response instance.
-        // You parse the data into a useable format using `.json()`
-        return response.json();
-      })
-      .then((data) => {
-        collegeListArr = data;
-      })
-      .then(() => {
-        showList();
-      });
-  }, []);
+  const handleAClicked = (event) => {
+    console.log(event.target.textContent);
+    sessionStorage.setItem("collegeSearched", event.target.textContent);
+  };
 
   return (
     <div id="StartBody-Container">
@@ -63,6 +54,22 @@ function StartBody() {
             className="fa-regular fa-circle-right"
             onClick={handleSearchButtonClicked}
           ></i>
+        </div>
+        <div id="college-autofill">
+          {" "}
+          <ul id="college-autofill-list">
+            {filteredArray.slice(0, 10).map((college) => (
+              <li key={college.institution}>
+                <a
+                  className="college-autofill-values hover-underline-animation"
+                  href="http://localhost:3000/collegeReport"
+                  onClick={(event) => handleAClicked(event)}
+                >
+                  {college.institution}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <img id="StartB-2" src={college2}></img>

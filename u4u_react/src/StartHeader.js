@@ -92,7 +92,7 @@ function StartHeader() {
       if (onLL.user === null) {
         alert("You must log in to see your list first");
         setLocation({
-          location: "http://localhost:3000/createaccount",
+          location: "http://localhost:3000/login",
           name: "My list",
         });
       }
