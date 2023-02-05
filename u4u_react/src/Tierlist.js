@@ -1,7 +1,7 @@
 import React from "react";
 
 function Tierlist() {
-  const [colors, setColors] = Rreact.useState({
+  const [colors, setColors] = React.useState({
     a: ["blue", "red"],
     b: ["pink"],
     c: ["green"],
