@@ -1,15 +1,21 @@
 .rectangle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+  position: absolute;
+  width: 658px;
+  height: 563px;
+  left: 430px;
+  top: 160px;
+
   background: #242424;
+  border-radius: 25px;
 }
 
 .header {
-  width: 30vw;
-  border-radius: 50%;
-  margin: 0 auto;
+  position: absolute;
+  width: 384px;
+  height: 54px;
+  left: 560px;
+  top: 170px;
+
   font-family: "Montagu Slab";
   font-style: normal;
   font-weight: 400;
@@ -20,38 +26,36 @@
   color: #ffffff;
 }
 
-/* Create Account */
 .loginInputs {
   position: absolute;
-  width: 30vw;
-  border-radius: 50%;
-  margin: 0 auto;
-
+  left: 36vw;
   border: 2px solid #c9d0db;
   border-radius: 5px;
+  position: absolute;
+  width: 400px;
+  height: 50px;
 }
 
-.loginInputsp {
-  position: absolute;
-  width: 456px;
-  height: 51px;
-  margin: auto;
-  top: 420px;
+.U {
+  top: 300px;
+}
 
-  border: 2px solid #c9d0db;
-  border-radius: 5px;
+.E {
+  top: 380px;
+}
+
+.P {
+  top: 460px;
 }
 
 /* Create Account */
 .loginSubmit {
   position: absolute;
-
-  margin: auto;
-  position: absolute;
-  width: 13vw;
-  border-radius: 50%;
-  margin: 0 auto;
-
+  width: 284px;
+  height: 43px;
+  left: 620px;
+  top: 569px;
+  font-size: large;
   border: 2px solid #ffffff;
   border-radius: 5px;
 }
@@ -84,29 +88,18 @@
   border-radius: 1px;
 }
 
-.gradient-custom {
-  /* fallback for old browsers */
-  background: #6a11cb;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  );
-}
-
 .background {
   position: absolute;
   width: 100vw;
   height: 100vh;
 
   background: #1e4c8f;
+}
+
+.link {
+  color: rgb(69, 69, 243);
+}
+
+input {
+  font-size: large;
 }
