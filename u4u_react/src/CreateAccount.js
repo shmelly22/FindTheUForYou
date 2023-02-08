@@ -85,7 +85,7 @@ function CreateAccount() {
         rel="stylesheet"
         type="text/css"
       ></link>
-      <section class="vh-100 gradient-custom">
+      <section className="vh-100 gradient-custom">
         <div className="background"></div>
         <div className="rectangle"></div>
         <h1 className="header">Create Account</h1>
@@ -139,7 +139,14 @@ function CreateAccount() {
             </div>
             <input type="checkbox" className="checkBox"></input>
             <div className="TOS">
-              I have read and agree to the Terms of Service
+              I have read and agree to the {""}
+              <a
+                href="http://localhost:3000/TOS/"
+                target="_blank"
+                className="link"
+              >
+                Terms of Service
+              </a>
             </div>
           </div>
         </div>

@@ -1,0 +1,50 @@
+.top {
+  background: #1e4c8f;
+}
+
+.toptxt {
+  margin-top: 100px;
+  font-size: 40px;
+  margin-left: 80px;
+}
+
+.middle {
+  background: #c9d0db;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blocks {
+  display: inline-block;
+  border: 1px solid #000000;
+  box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  min-height: 50px;
+  height: 100%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.image {
+  width: 30vw;
+  height: 50vh;
+  margin: 10px;
+  margin-left: 250px;
+}
+
+.middletxt {
+  margin: 40px;
+  font-size: 23px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0px;
+  height: 100%;
+}
