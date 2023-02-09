@@ -25,6 +25,7 @@ function StartHeader() {
   var onLL = {
     location: "",
     user: sessionStorage.getItem("User"),
+    userID: sessionStorage.getItem("UserID"),
   };
   function firstFunction() {
     onLL.location = window.location.href;
