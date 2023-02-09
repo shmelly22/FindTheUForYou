@@ -1,10 +1,11 @@
-const express = require("express");
+import express from "express";
+
+import cors from "cors";
+import path from "path";
 const app = express();
-const cors = require("cors");
 app.use(cors());
 var bodyParser = require("body-parser");
 const fs = require("fs");
-import path from "path";
 
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "./u4u_react/build")));
