@@ -74,44 +74,56 @@ function Login() {
         type="text/css"
       ></link>
       <section class="vh-100 gradient-custom">
-        <div className="background"></div>
-        <div className="rectangle"></div>
-        <h1 className="header">Login</h1>
-        <div id="createAccountContainer">
-          <div id="createAccountBox">
-            <div id="usernameBox" value="hello">
-              <input
-                type={"text"}
-                name={"username"}
-                value={username}
-                onChange={(event) => handleUsernameChange(event)}
-                required
-                placeholder="Username"
-                className="loginInputs"
-                maxLength={18}
-              ></input>
-            </div>
-            <div id="passwordBox">
-              <input
-                type={"text"}
-                name={"password"}
-                value={password}
-                onChange={(event) => handlePassowrdChange(event)}
-                required
-                placeholder="Password"
-                className="loginInputsp"
-                maxLength={12}
-              ></input>
-            </div>
-
-            <div id="submitButton">
-              <button
-                type="submit"
-                className="loginSubmit"
-                onClick={(event) => handleSubmit(event)}
-              >
-                Login
-              </button>
+        <div className="Background">
+          <div className="rectangleL"></div>
+          <h1 className="Header">Login</h1>
+          <div className="Header2">
+            Please enter your username and password!
+          </div>
+          <div id="createAccountContainer">
+            <div id="createAccountBox">
+              <div id="usernameBox" value="hello">
+                <input
+                  type={"text"}
+                  name={"username"}
+                  value={username}
+                  onChange={(event) => handleUsernameChange(event)}
+                  required
+                  placeholder="Username"
+                  className="loginInputU"
+                  maxLength={18}
+                ></input>
+              </div>
+              <div id="passwordBox">
+                <input
+                  type={"text"}
+                  name={"password"}
+                  value={password}
+                  onChange={(event) => handlePassowrdChange(event)}
+                  required
+                  placeholder="Password"
+                  className="loginInputP"
+                  maxLength={12}
+                ></input>
+              </div>
+              <div id="submitButton">
+                <button
+                  type="submit"
+                  className="LoginSubmit"
+                  onClick={(event) => handleSubmit(event)}
+                >
+                  Login
+                </button>
+              </div>
+              <div className="Footer">
+                Dont have an account? {""}
+                <a
+                  href="http://localhost:3000/CreateAccount/"
+                  className="linkL"
+                >
+                  Sign up
+                </a>
+              </div>
             </div>
           </div>
         </div>

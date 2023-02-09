@@ -1,38 +1,28 @@
-.background {
-  background: #6a11cb;
+.Background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(
-    to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
-  );
+  background: #1e4c8f;
 }
 
-.rectangle {
+.rectangleL {
   position: absolute;
-  width: 658px;
-  height: 563px;
-  left: 430px;
-  top: 150px;
+  width: 515px;
+  height: 580px;
+  left: 498px;
+  top: 50px;
 
   background: #242424;
   border-radius: 25px;
 }
 
-.header {
+.Header {
   position: absolute;
-  width: 384px;
+  width: 146px;
   height: 54px;
-  left: 528px;
-  top: 180px;
+  left: 680px;
+  top: 80px;
 
   font-family: "Montagu Slab";
   font-style: normal;
@@ -44,37 +34,73 @@
   color: #ffffff;
 }
 
-/* Create Account */
-.loginInputs {
+.Header2 {
   position: absolute;
-  width: 456px;
-  height: 51px;
-  left: 492px;
-  top: 320px;
+  width: 483px;
+  height: 18px;
+  left: 515px;
+  top: 180px;
 
-  border: 2px solid #c9d0db;
-  border-radius: 5px;
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #ffffff;
 }
 
-.loginInputsp {
+.LoginSubmit {
   position: absolute;
-  width: 456px;
-  height: 51px;
-  left: 492px;
-  top: 420px;
-
-  border: 2px solid #c9d0db;
-  border-radius: 5px;
-}
-
-/* Create Account */
-.loginSubmit {
-  position: absolute;
-  width: 284px;
+  width: 138px;
   height: 43px;
-  left: 578px;
-  top: 530px;
-
+  left: 680px;
+  top: 450px;
+  font-size: large;
   border: 2px solid #ffffff;
   border-radius: 5px;
+}
+
+.Footer {
+  position: absolute;
+  width: 733px;
+  height: 59px;
+  left: 390px;
+  top: 550px;
+
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.loginInputU {
+  position: absolute;
+  left: 36vw;
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  top: 250px;
+}
+
+.loginInputP {
+  position: absolute;
+  left: 36vw;
+  border: 2px solid #c9d0db;
+  border-radius: 5px;
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  top: 350px;
+}
+
+.linkL {
+  color: rgb(69, 69, 243);
 }

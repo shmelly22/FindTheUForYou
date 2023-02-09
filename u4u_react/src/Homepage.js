@@ -3,15 +3,10 @@ import Tierlist from "./Tierlist";
 
 import "./Homepage.css";
 
-function Homepage() {
+function Homepage(props) {
   return (
     <div className="Tierlist">
       <Tierlist />{" "}
-      <img
-        src="https://i.ytimg.com/vi/zcTMmfxXEkg/maxresdefault.jpg"
-        className="hikaru"
-        draggable="true"
-      ></img>
     </div>
   );
 }

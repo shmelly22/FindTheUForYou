@@ -5,7 +5,7 @@ import Login from "./Login";
 import CreateAccount from "./CreateAccount";
 import AboutUs from "./AboutUs";
 import CollegeReport from "./CollegeReport";
-import Test from "./Test";
+import TOS from "./TOS";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -20,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/collegeReport" element={<CollegeReport />} />
+        <Route path="/TOS" element={<TOS />} />
       </Routes>
     </div>
   );
