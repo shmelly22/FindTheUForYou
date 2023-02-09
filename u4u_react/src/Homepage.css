@@ -9,10 +9,29 @@
   background-color: aqua;
   border: solid black;
   font-size: 35px;
-  justify-content: center;
   align-items: center;
+  height: 100px;
 }
 
+body {
+  background-color: rgba(17, 92, 221, 0.559);
+}
+
+.dragList {
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  height: 150px;
+}
+
+.tierLabel {
+  border: 1px solid black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+}
 .collegeSpace {
   background-color: #191919;
   border: solid black;
@@ -40,4 +59,11 @@
 
 .hikaru {
   width: 180px;
+}
+
+.item {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
 }
