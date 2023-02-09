@@ -7,6 +7,7 @@ function Login() {
   var allUsernames = [];
   var allPasswords = [];
   var allEmails = [];
+  var allUserID = [];
 
   fetch("http://localhost:5000/login", {
     method: "GET",
@@ -26,6 +27,7 @@ function Login() {
           allUsernames.push(data.usernames[index].toUpperCase());
           allPasswords.push(data.password[index].toUpperCase());
           allEmails.push(data.email[index].toUpperCase());
+          allUserID.push(data.user_id[index]);
         }
       }
     });
@@ -54,6 +56,7 @@ function Login() {
           alert("Username and password match welcome in" + " " + username);
           window.location.href = "http://localhost:3000/";
           sessionStorage.setItem("User", username);
+          sessionStorage.setItem("UserID", allUserID[usernameIndex]);
         } else {
           alert("Username is correct, however the password is incorrect");
         }

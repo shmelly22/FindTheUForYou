@@ -16,7 +16,7 @@ const db = require("knex")({
   connection: {
     host: "arjuna.db.elephantsql.com",
     user: "kzodqrwg",
-    password: "IgOQdNWzL8yx5z8IAkuJQ5flxz6ZPyW-",
+    password: "3Bf_uXiElb-1WLJoraC2YZTP0B-8Imjz",
     database: "kzodqrwg",
     port: 5432,
   },
@@ -30,9 +30,13 @@ app.get("/", (req, res) => {
 var allUsernames = [];
 var allPasswords = [];
 var allEmails = [];
+var allUsers = [];
+var allUsersCollege = [];
+var allCollegeFav = [];
+var collegeCounter = 0;
 
 app.get("/login", (req, res) => {
-  db.select("username", "password", "email")
+  db.select("username", "password", "email", "user_id")
     .from("accounts")
     .then((rows) => {
       // console.log(rows);
@@ -41,17 +45,21 @@ app.get("/login", (req, res) => {
           allUsernames.push(rows[index].username);
           allPasswords.push(rows[index].password);
           allEmails.push(rows[index].email);
+          allUsers.push(rows[index].user_id);
         }
 
         console.log(allUsernames);
         console.log(allPasswords);
         console.log(allEmails);
+        console.log(allUsers);
       }
     });
+
   var allLoginInfo = {
     usernames: allUsernames,
     password: allPasswords,
     email: allEmails,
+    users: allUsers,
   };
 
   res.json(allLoginInfo);
@@ -72,6 +80,33 @@ app.post("/login", (req, res) => {
     )
     .then((accounts) => console.log("Username Added to DB"));
 });
+app.get("/college", (req, res) => {
+  db.select("user", "college")
+    .from("collegelist")
+    .then((rows) => {
+      // console.log(rows);
+
+      for (let index = 0; index < rows.length; index++) {
+        allUsersCollege.push(rows[index].user);
+        allCollegeFav.push(rows[index].college);
+
+        console.log(allUsersCollege);
+        console.log(allCollegeFav);
+      }
+    })
+    .then(() => {
+      var allCollegeListDetails = {
+        users: allUsersCollege,
+        collegesFavorited: allCollegeFav,
+      };
+
+      res.json(allCollegeListDetails);
+    })
+    .then(() => {
+      allUsersCollege = [];
+      allCollegeFav = [];
+    });
+});
 
 app.post("/college", (req, res) => {
   console.log("I am posting in the colleges page");
@@ -91,4 +126,22 @@ app.post("/college", (req, res) => {
 
 app.listen(5000, () => {
   console.log("listening on 5000");
+});
+
+app.post("/collegeRemove", (req, res) => {
+  let userLogged = req.body.user;
+  let collegeSearched = req.body.collegeSearched;
+  console.log(
+    "I am deleting" + " " + { collegeSearched } + " " + "from the favorites"
+  );
+
+  db("collegelist")
+    .where({
+      user: userLogged,
+      college: collegeSearched,
+    })
+    .del()
+    .then(() => {
+      console.log("Deleted rows");
+    });
 });
