@@ -4,6 +4,13 @@ const cors = require("cors");
 app.use(cors());
 var bodyParser = require("body-parser");
 const fs = require("fs");
+import path from "path";
+
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "./u4u_react/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./u4u_react/build", "index.html"));
+});
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
